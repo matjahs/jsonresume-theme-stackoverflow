@@ -13,12 +13,6 @@
           <div class="studyType">
             {{name}}
           </div>
-          {{/if}}
-          {{#if url}}
-          <div class="area">
-            {{url}}
-          </div>
-          {{/if}}
           {{#if issuer}}
           <div class="institution">
             {{issuer}}
@@ -33,6 +27,10 @@
           {{/if}}
         </div>
       </header>
+      {{#if website}}
+    	<span class="website">
+    		<a target="_blank" href="{{website}}">{{website-name}}</a>
+    	</span> {{/if}}
       </div>
     </section>
     {{/each}}
