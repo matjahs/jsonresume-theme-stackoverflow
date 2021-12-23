@@ -6,11 +6,12 @@
 
   <section id="certificates">
     {{#each resume.certificates}}
-    <section class="certificates-item">
+    <section class="education-item">
+      
       <header class="clear">
         <div class="header-left">
           {{#if name}}
-          <div class="studyType">
+          <div class="area">
             {{name}}
           </div>
           {{/if}}
@@ -22,18 +23,19 @@
         </div>
         <div class="date">
           {{#if date}}
-          <span class="startDate">
-          {{Y date}}
+          <span class="endDate">
+          {{MY date}}
           </span>
           {{/if}}
         </div>
       </header>
-      {{#if website}}
-    	<span class="website">
-    		<a target="_blank" href="{{website}}">{{website-name}}</a>
+
+      {{#if url}}
+    	<span class="summary">
+    		<a target="_blank" href="{{url}}">verification link</a>
     	</span>
       {{/if}}
-      </div>
+        
     </section>
     {{/each}}
   </section>
